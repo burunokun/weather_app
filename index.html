@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/icons8-haze-cute-outline-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/icons8-haze-cute-outline-32.png">
+        <link rel="icon" type="image/png" sizes="72x72" href="./favicon/icons8-haze-cute-outline-72.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="./favicon/icons8-haze-cute-outline-96.png">
+    </head>
+
+    <body>
+        <div class="weather-container">
+            <h1>Hey, how's the weather??</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city" />
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="curent-weather">
+                <h2 id="city-name"></h2>
+                <p id="weather-description"></p>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+            </div>
+
+            <div id="loading" class="hidden">Loading...</div>
+            <div id="error-message" class="hidden">Could not fetch weather data. Please try again.</div>
+        </div>
+
+        <script src="./weather.js"></script>
+    </body>
+
+</html>

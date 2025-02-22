@@ -1,0 +1,105 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Main weather container */
+.weather-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    color: #4a90e2;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 10px;
+}
+
+#search-btn {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #357ab7;
+}
+
+/* Current weather info display */
+#current-weather {
+    margin-top: 20px;
+}
+
+#city-name {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+#temperature,
+#humidity,
+#wind {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Loading and error messages */
+#loading,
+#error-message {
+    font-size: 1rem;
+    color: #ff4c4c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
